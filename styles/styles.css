@@ -36,6 +36,11 @@ nav .menu{
     font-weight: bold;
     cursor: pointer;
 }
+
+.btn:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}
 .section-heading{
     max-width: 827px;
     text-align: center;
@@ -67,7 +72,12 @@ nav .menu{
 .text-center{
     text-align: center;
 }
+.btn-g{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 
+}
  /*single */
 header{
     background-color: #FFF8F3;
@@ -277,6 +287,86 @@ footer .footer-container{
     font-size: 16px;
     color: #757575;
     
+}
+.hide{
+    display: none !important;
+}
+
+@media screen and (max-width:576px) {
+    #skils .skil-container {
+    width: 95%;
+    }
+    .section-heading h2 {
+    font-size: 30px;
+
+    }
+    #skils{
+    padding-top: 60px;
+    }
+    #skils .skil-container .skil{
+        flex-direction: column;
+
+    }
+    .skil .skil-card {
+        max-width: 100%;
+        
+    }
+    #about .about-container {
+        width: 95%;
+        padding: 0;
+
+    }
+    .about-info {
+        flex-direction: column;
+  
+    }
+    footer .footer-container {
+    width: 95%;
+    flex-direction: column;
+ 
+    }
+    .footer-container form input[type="text"],.footer-container form textarea{
+    max-width: 100%;
+    padding: 18px 32px;
+    }
+    #resume .resume-container{
+        margin-top: 60px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+    nav .menu{
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+    }
+    #banner{
+        margin: 20px;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+
+
+    }
+
+    #banner .banner-img img{
+    max-width: 100%;
+    
+
+    }
+    #banner .banner-content h1{
+        font-size: 44px;
+    }
+    .btn-g{
+        justify-content: center  ;
+    }
+
 }
 
 
